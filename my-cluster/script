@@ -1,4 +1,4 @@
-for ((i=1;i<=10000;i++)); do
+for ((i=1;i<=1;i++)); do
   cat << EOF > c${i}-cm.yaml
 apiVersion: v1
 kind: ConfigMap
@@ -7,5 +7,4 @@ metadata:
 data:
   hello: world
 EOF
-  echo "- c${i}-cm.yaml" >> kustomization.yaml
 done

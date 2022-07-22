@@ -1,0 +1,11 @@
+for ((i=1;i<=100;i++)); do
+  cat << EOF > c${i}-cm.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: c${i}
+data:
+  hello: world
+EOF
+  echo "- c${i}-cm.yaml" >> kustomization.yaml
+done

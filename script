@@ -1,4 +1,4 @@
-for ((i=1;i<=7000;i++)); do
+for ((i=1;i<=1;i++)); do
   cat << EOF > my-cluster/c${i}-cm.yaml
 apiVersion: v1
 kind: ConfigMap

@@ -2,5 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - debug-pod.yaml
-- c00001-cm.yaml
-
+- c1-cm.yaml
+- c2-cm.yaml
+- c3-cm.yaml
+- c4-cm.yaml
+- c5-cm.yaml
+- c6-cm.yaml
+- c7-cm.yaml
+- c8-cm.yaml
+- c9-cm.yaml
+- c10-cm.yaml
